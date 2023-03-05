@@ -25,7 +25,7 @@ export class AppMenuComponent implements OnInit {
                 items: [
                     { label: 'Matrimonios', icon: 'pi pi-fw pi-users' , routerLink: ['/dashboard/uikit/matrimonios'] },
                     { label: 'Defunsiones', icon: 'pi pi-fw pi-user-minus' , routerLink: ['/dashboard/uikit/defunsiones'] },
-                    { label: 'Nacimientos', icon: 'pi pi-fw pi-user-plus' , routerLink: ['/dashboard/uikit/formlayout'] },
+                    { label: 'Nacimientos', icon: 'pi pi-fw pi-user-plus' , routerLink: ['/dashboard/uikit/nacimientos'] },
                     { label: 'Form Layout', icon: 'pi pi-fw pi-id-card', routerLink: ['/dashboard/uikit/formlayout'] },
                     { label: 'Input', icon: 'pi pi-fw pi-check-square', routerLink: ['/dashboard/uikit/input'] },
                     { label: 'Float Label', icon: 'pi pi-fw pi-bookmark', routerLink: ['/dashboard/uikit/floatlabel'] },

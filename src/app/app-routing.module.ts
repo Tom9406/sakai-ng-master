@@ -9,8 +9,8 @@ import { AppLayoutComponent } from "./layout/app.layout.component";
             {
                 path: 'dashboard', component: AppLayoutComponent,
                 children: [
-                    //  { path: '', loadChildren: () => import('./demo/components/dashboard/dashboard.module').then(m => m.DashboardModule) },
-                    { path: '', loadChildren: () => import('./demo/components/control-panel/control-panel.module').then(m => m.ControlPanelModule) },
+                      { path: '', loadChildren: () => import('./demo/components/dashboard/dashboard.module').then(m => m.DashboardModule) },
+                    //{ path: '', loadChildren: () => import('./demo/components/control-panel/control-panel.module').then(m => m.ControlPanelModule) },
                     { path: 'uikit', loadChildren: () => import('./demo/components/uikit/uikit.module').then(m => m.UIkitModule) },
                     { path: 'utilities', loadChildren: () => import('./demo/components/utilities/utilities.module').then(m => m.UtilitiesModule) },
                     { path: 'blocks', loadChildren: () => import('./demo/components/primeblocks/primeblocks.module').then(m => m.PrimeBlocksModule) },

@@ -10,7 +10,7 @@ import { NacimientosComponent } from './nacimientos/nacimientos.component';
 		UIkitRoutingModule
 	],
 	declarations: [	
-    NacimientosComponent
+    
   ]
 })
 export class UIkitModule { }

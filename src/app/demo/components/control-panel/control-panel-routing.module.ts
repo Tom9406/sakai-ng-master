@@ -5,7 +5,9 @@ import { ControlPanelComponent } from './control-panel.component';
 const routes: Routes = [{path: '', component: ControlPanelComponent}];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild([
+    { path: '', component: ControlPanelComponent }
+])],
   exports: [RouterModule]
 })
 export class ControlPanelRoutingModule { }
