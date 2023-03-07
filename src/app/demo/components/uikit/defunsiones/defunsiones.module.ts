@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { DefunsionesRoutingModule } from './defunsiones-routing.module';
 import { DefunsionesComponent } from './defunsiones.component';
+import { ButtonModule } from 'primeng/button';
 
 
 @NgModule({
   declarations: [DefunsionesComponent],
   imports: [
     CommonModule,
-    DefunsionesRoutingModule
+    DefunsionesRoutingModule,
+    ButtonModule
   ]
 })
 export class DefunsionesModule { }
