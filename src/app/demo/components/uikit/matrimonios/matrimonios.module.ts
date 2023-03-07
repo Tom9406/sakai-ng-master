@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MatrimoniosRoutingModule } from './matrimonios-routing.module';
 import { MatrimoniosComponent } from './matrimonios.component';
+import { ButtonModule } from 'primeng/button';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { MatrimoniosComponent } from './matrimonios.component';
   ],
   imports: [
     CommonModule,
-    MatrimoniosRoutingModule
+    MatrimoniosRoutingModule,
+    ButtonModule
   ]
 })
 export class MatrimoniosModule { }
