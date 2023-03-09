@@ -1,4 +1,5 @@
 import { Component ,OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 
 @Component({
@@ -10,6 +11,8 @@ export class MatrimoniosComponent implements OnInit {
   items: MenuItem[] = [];
 
     loading = [false, false, false, false];
+
+    constructor( private router: Router){}
    
 
     ngOnInit() {
@@ -27,6 +30,10 @@ export class MatrimoniosComponent implements OnInit {
         setTimeout(() => this.loading[index] = false, 1000);
     }
     
-
+    inscribir_matrimonio(){
+      this.router.navigate(['']);  
+    }
 
 }
+
+
