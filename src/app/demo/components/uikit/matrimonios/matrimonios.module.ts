@@ -6,9 +6,11 @@ import { MatrimoniosComponent } from './matrimonios.component';
 import { ButtonModule } from 'primeng/button';
 
 
+
 @NgModule({
   declarations: [
     MatrimoniosComponent
+    
   ],
   imports: [
     CommonModule,
