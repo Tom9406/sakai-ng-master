@@ -29,7 +29,7 @@ export class AppTopBarComponent {
         ) { }
 
         login(){
-            this.router.navigate(['/login']);
+            this.router.navigate(['']);
         }
 
     get visible(): boolean {
