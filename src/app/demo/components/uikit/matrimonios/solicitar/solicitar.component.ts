@@ -1,6 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { CountryService } from 'src/app/demo/service/country.service';
+import { ProvinciasService } from 'src/app/demo/service/provincias.service';
 
 @Component({
   selector: 'app-solicitar',
@@ -9,11 +9,11 @@ import { CountryService } from 'src/app/demo/service/country.service';
 })
 export class SolicitarComponent implements OnInit {
 
-  countries: any[] = [];
+  provincias: any[] = [];
 
-  cities: any[];
 
-  filteredCountries: any[] = [];
+
+  filteredProvincias: any[] = [];
 
   value1: any;
 
@@ -39,35 +39,29 @@ export class SolicitarComponent implements OnInit {
 
   value12: any;
 
-  constructor(private countryService: CountryService, private router: Router) {
-    this.cities = [
-        {name: 'La Habana', code: 'HAB'},
-        {name: 'Pinar del Rio', code: 'PR'},
-        {name: 'Mayabeque', code: 'MAY'},
-        {name: 'Artemisa', code: 'ART'},
-        {name: 'Paris', code: 'PRS'}
-    ];
+  constructor(private provinciasService: ProvinciasService, private router: Router) {
+  
 }
 ngOnInit() {
-  this.countryService.getCountries().then(countries => {
-      this.countries = countries;
+  this.provinciasService.getProvincias().then(provincias => {
+      this.provincias = provincias;
   });
 }
 
-searchCountry(event: any) {
+searchProvincias(event: any) {
   // in a real application, make a request to a remote url with the query and
   // return filtered results, for demo we filter at client side
   const filtered: any[] = [];
   const query = event.query;
   // tslint:disable-next-line:prefer-for-of
-  for (let i = 0; i < this.countries.length; i++) {
-      const country = this.countries[i];
-      if (country.name.toLowerCase().indexOf(query.toLowerCase()) == 0) {
-          filtered.push(country);
+  for (let i = 0; i < this.provincias.length; i++) {
+      const provincias = this.provincias[i];
+      if (provincias.name.toLowerCase().indexOf(query.toLowerCase()) == 0) {
+          filtered.push(provincias);
       }
   }
 
-  this.filteredCountries = filtered;
+  this. filteredProvincias = filtered;
 }
 cancelar(){
   this.router.navigate(['dashboard/uikit/matrimonios'])

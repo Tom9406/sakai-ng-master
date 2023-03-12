@@ -22,6 +22,11 @@ export class MatrimoniosComponent {
       this.router.navigate(['dashboard/uikit/matrimonios/solicitar']);  
     }
 
+    anular_matrimonio(){
+      console.log("entrando en anular");
+      this.router.navigate(['dashboard/uikit/matrimonios/anular']);  
+    }
+
 }
 
 

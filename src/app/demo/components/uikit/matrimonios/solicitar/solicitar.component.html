@@ -24,14 +24,16 @@
         </div>
         <div class="field col-12 md:col-4">
             <span class="p-float-label">
-                <p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="cities" [(ngModel)]="value10" optionLabel="name"></p-dropdown>
-                <label for="dropdown">Municipio</label>
+                <p-autoComplete inputId="autocomplete" [(ngModel)]="value1" [suggestions]="filteredProvincias"
+                (completeMethod)="searchProvincias($event)" field="name"></p-autoComplete>
+                <label for="autocomplete">Municipio</label>
             </span>
         </div>
         <div class="field col-12 md:col-4">
             <span class="p-float-label">
-                <p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="cities" [(ngModel)]="value10" optionLabel="name"></p-dropdown>
-                <label for="dropdown">Provincia</label>
+                <p-autoComplete inputId="autocomplete" [(ngModel)]="value2" [suggestions]="filteredProvincias"
+                (completeMethod)="searchProvincias($event)" field="name"></p-autoComplete>
+                <label for="autocomplete">Provincia</label>
             </span>
         </div>
     

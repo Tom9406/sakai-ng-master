@@ -6,12 +6,14 @@ import { MatrimoniosComponent } from './matrimonios.component';
 import { ButtonModule } from 'primeng/button';
 import { SolicitarComponent } from './solicitar/solicitar.component';
 import { AnularComponent } from './anular/anular.component';
+import { ConsultarComponent } from './consultar/consultar.component';
 
 
 
 @NgModule({
   declarations: [
-    MatrimoniosComponent    
+    MatrimoniosComponent,
+    ConsultarComponent    
   ],
   imports: [
     CommonModule,

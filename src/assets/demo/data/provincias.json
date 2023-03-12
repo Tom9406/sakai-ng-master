@@ -1,0 +1,16 @@
+{
+    "data": [ 
+        {"name": "La Habana", "code": "HAB"}, 
+        {"name": "Pinar del Rio", "code": "PR"}, 
+        {"name": "Santiago de Cuba", "code": "SANT"},
+        {"name": "Mayabeque", "code": "MAY"}, 
+        {"name": "Artemisa", "code": "ART"}, 
+        {"name": "Isla de la Juventud", "code": "ISJ"},
+        {"name": "Matanzas", "code": "MAT"}, 
+        {"name": "Villa Clara", "code": "VC"}, 
+        {"name": "Cienfuegos", "code": "CFG"},
+        {"name": "Camaguey", "code": "CMG"}, 
+        {"name": "Holguin", "code": "HLG"}, 
+        {"name": "Las Tunas", "code": "LTN"}       
+    ]
+}
