@@ -11,6 +11,7 @@ const routes: Routes = [];
     { path: 'inscribir', data: { breadcrumb: 'Inscribir Matrimonio' }, loadChildren: () => import('./inscribir/inscribir.module').then(m => m.InscribirModule) },
     { path: 'solicitar', data: { breadcrumb: 'Solicitar Acta de Matrimonio' }, loadChildren: () => import('./solicitar/solicitar.module').then(m => m. SolicitarModule) },
     { path: 'anular', data: { breadcrumb: 'Anular Matrimonio' }, loadChildren: () => import('./anular/anular.module').then(m => m. AnularModule) },
+    { path: 'consultar', data: { breadcrumb: 'Consultar estado del trámite' }, loadChildren: () => import('./consultar/consultar.module').then(m => m. ConsultarModule) },
     { path: '**', redirectTo: '/notfound' }
 	])],
   exports: [RouterModule]
