@@ -9,6 +9,7 @@ const routes: Routes = [];
  
     { path: '', component: MatrimoniosComponent },
     { path: 'inscribir', data: { breadcrumb: 'Inscribir Matrimonio' }, loadChildren: () => import('./inscribir/inscribir.module').then(m => m.InscribirModule) },
+    { path: 'solicitar', data: { breadcrumb: 'Solicitar Acta de Matrimonio' }, loadChildren: () => import('./solicitar/solicitar.module').then(m => m. SolicitarModule) },
     { path: '**', redirectTo: '/notfound' }
 	])],
   exports: [RouterModule]

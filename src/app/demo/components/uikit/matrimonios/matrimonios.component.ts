@@ -14,8 +14,12 @@ export class MatrimoniosComponent {
     
     inscribir_matrimonio(){
       console.log("entrando en inscribir");
-      this.router.navigate(['dashboard/uikit/matrimonios/inscribir']); 
-     
+      this.router.navigate(['dashboard/uikit/matrimonios/inscribir']);      
+    }
+
+    solicitar_matrimonio(){
+      console.log("entrando en solicitar");
+      this.router.navigate(['dashboard/uikit/matrimonios/solicitar']);  
     }
 
 }

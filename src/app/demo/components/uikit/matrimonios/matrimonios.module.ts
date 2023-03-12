@@ -4,13 +4,14 @@ import { CommonModule } from '@angular/common';
 import { MatrimoniosRoutingModule } from './matrimonios-routing.module';
 import { MatrimoniosComponent } from './matrimonios.component';
 import { ButtonModule } from 'primeng/button';
+import { SolicitarComponent } from './solicitar/solicitar.component';
+import { AnularComponent } from './anular/anular.component';
 
 
 
 @NgModule({
   declarations: [
-    MatrimoniosComponent
-    
+    MatrimoniosComponent    
   ],
   imports: [
     CommonModule,

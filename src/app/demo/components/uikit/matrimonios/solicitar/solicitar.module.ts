@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { InscribirRoutingModule } from './inscribir-routing.module';
-import { InscribirComponent } from './inscribir.component';
+import { SolicitarRoutingModule } from './solicitar-routing.module';
+import { SolicitarComponent } from './solicitar.component';
 import { FormsModule } from '@angular/forms';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { CalendarModule } from 'primeng/calendar';
@@ -17,11 +17,11 @@ import { InputTextModule } from 'primeng/inputtext';
 
 
 @NgModule({
-  declarations: [InscribirComponent],
+  declarations: [SolicitarComponent],
   imports: [
     CommonModule,
-    InscribirRoutingModule,
-   		FormsModule,		
+    SolicitarRoutingModule,
+    FormsModule,		
 		AutoCompleteModule,
 		CalendarModule,
 		ChipsModule,
@@ -33,5 +33,6 @@ import { InputTextModule } from 'primeng/inputtext';
 		InputTextareaModule,
 		InputTextModule
   ]
+  
 })
-export class InscribirModule { }
+export class SolicitarModule { }

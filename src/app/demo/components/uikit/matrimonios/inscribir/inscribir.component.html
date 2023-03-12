@@ -1,1 +1,93 @@
-<p>inscribir works!</p>
+<div class="card">
+    <h5>Datos Registrales</h5>
+    <p>Asegurese de introducir correctamente todos los datos relacionados con el matrimonio </p>
+    <div class="grid p-fluid mt-3">
+        <div class="field col-12 md:col-4">
+            <span class="p-float-label">
+                <input type="text" id="inputtext" pInputText [(ngModel)]="value1">
+                <label for="inputtext">Nombre(s)</label>
+            </span>
+        </div>
+        <div class="field col-12 md:col-4">
+            <span class="p-float-label">
+                <input type="text" id="inputtext" pInputText [(ngModel)]="value1">
+                <label for="inputtext">Primer Apellido</label>
+            </span>
+        </div>
+        <div class="field col-12 md:col-4">
+            <span class="p-float-label">
+                <input type="text" id="inputtext" pInputText [(ngModel)]="value1">
+                <label for="inputtext">Segundo Apellido</label>
+            </span>
+        </div>
+        <div class="field col-12 md:col-4">
+            <span class="p-float-label">
+                <input type="text" id="inputtext" pInputText [(ngModel)]="value1">
+                <label for="inputtext">Nombre(s)</label>
+            </span>
+        </div>
+        <div class="field col-12 md:col-4">
+            <span class="p-float-label">
+                <input type="text" id="inputtext" pInputText [(ngModel)]="value1">
+                <label for="inputtext">Primer Apellido</label>
+            </span>
+        </div>
+        <div class="field col-12 md:col-4">
+            <span class="p-float-label">
+                <input type="text" id="inputtext" pInputText [(ngModel)]="value1">
+                <label for="inputtext">Segundo Apellido</label>
+            </span> 
+        </div>
+        <div class="field col-12 md:col-4">
+            <span class="p-float-label">
+                <p-inputNumber inputId="inputnumber" [(ngModel)]="value8"></p-inputNumber>
+                <label for="inputnumber">Tomo</label>
+            </span>
+        </div>
+        <div class="field col-12 md:col-4">
+            <span class="p-float-label">
+                <p-inputNumber inputId="inputnumber" [(ngModel)]="value8"></p-inputNumber>
+                <label for="inputnumber">Folio</label>
+            </span>
+        </div>
+        <div class="field col-12 md:col-4">
+            <div class="p-inputgroup">
+                <span class="p-float-label">                   
+			        <p-calendar inputId="calendar" [showIcon]="false" ></p-calendar>                   
+                    <label for="calendar">Fecha</label>
+                </span>
+            </div>
+        </div>
+        <div class="field col-12 md:col-4">
+            <span class="p-float-label">
+                <p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="cities" [(ngModel)]="value10" optionLabel="name"></p-dropdown>
+                <label for="dropdown">Municipio</label>
+            </span>
+        </div>
+        <div class="field col-12 md:col-4">
+            <span class="p-float-label">
+                <p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="cities" [(ngModel)]="value10" optionLabel="name"></p-dropdown>
+                <label for="dropdown">Provincia</label>
+            </span>
+        </div>
+        <div class="field col-12 md:col-4">
+            <span class="p-float-label">
+                <textarea inputId="textarea" rows="3" cols="30" [(ngModel)]="value12" pInputTextarea></textarea>
+                <label for="textarea">Observaciones</label>
+            </span>
+        </div>
+        <div class="field col-12 md:col-4">
+            <span class="p-float-label">
+            <button pButton pRipple type="button" label="Registar" class="p-button-rounded width margin"></button>
+           
+			</span>
+        </div>   
+        <div class="field col-12 md:col-4">
+            <span class="p-float-label">
+   
+            <button pButton pRipple type="button" label="Cancelar" class="p-button-rounded p-button-secondary width"  (click)="cancelar()"></button>   
+			</span>
+        </div> 
+       
+    </div>
+</div>

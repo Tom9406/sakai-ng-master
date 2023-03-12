@@ -1,14 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CountryService } from 'src/app/demo/service/country.service';
 
 @Component({
-  selector: 'app-inscribir',
-  templateUrl: './inscribir.component.html',
-  styleUrls: ['./inscribir.component.scss']
-  
+  selector: 'app-solicitar',
+  templateUrl: './solicitar.component.html',
+  styleUrls: ['./solicitar.component.scss']
 })
-export class InscribirComponent implements OnInit {
+export class SolicitarComponent implements OnInit {
+
   countries: any[] = [];
 
   cities: any[];
@@ -39,7 +39,7 @@ export class InscribirComponent implements OnInit {
 
   value12: any;
 
-  constructor(private countryService: CountryService,private router: Router) {
+  constructor(private countryService: CountryService, private router: Router) {
     this.cities = [
         {name: 'La Habana', code: 'HAB'},
         {name: 'Pinar del Rio', code: 'PR'},
@@ -73,6 +73,7 @@ cancelar(){
   this.router.navigate(['dashboard/uikit/matrimonios'])
 }
 }
+
 
 
 
