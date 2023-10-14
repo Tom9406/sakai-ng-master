@@ -23,6 +23,7 @@ export class AppMenuComponent implements OnInit {
             {
                 label: 'Categorías',
                 items: [
+                    { label: 'Manufacturer', icon: 'pi pi-fw pi-users' , routerLink: ['/dashboard/uikit/manufacturer'] },
                     { label: 'Matrimonios', icon: 'pi pi-fw pi-users' , routerLink: ['/dashboard/uikit/matrimonios'] },
                     { label: 'Defunsiones', icon: 'pi pi-fw pi-user-minus' , routerLink: ['/dashboard/uikit/defunsiones'] },
                     { label: 'Nacimientos', icon: 'pi pi-fw pi-user-plus' , routerLink: ['/dashboard/uikit/nacimientos'] },
