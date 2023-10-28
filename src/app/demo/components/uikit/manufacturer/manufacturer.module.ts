@@ -25,10 +25,11 @@ import { ColorPickerModule } from 'primeng/colorpicker';
 import { ToggleButtonModule } from 'primeng/togglebutton';
 import { SliderModule } from 'primeng/slider';
 import { ManufacturerRoutingModule } from './manufacturer-routing.module';
+import { ManufacturerComponent } from './manufacturer.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [ManufacturerComponent],
   imports: [
     CommonModule,
 		FormsModule,
